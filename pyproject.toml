@@ -13,7 +13,7 @@ classifiers = [
   "Topic :: Scientific/Engineering"
 ]
 dependencies = ["cfgrib", "ecmwf-datastores-client", "ecmwf-opendata", "polytope-client", "xarray"]
-description = "Xarray backend to access data via the cdsapi package"
+description = "Xarray backend to access ECMWF datastores"
 dynamic = ["version"]
 license = {file = "LICENSE"}
 name = "xarray-ecmwf"
