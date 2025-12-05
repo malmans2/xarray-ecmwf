@@ -16,7 +16,7 @@ DIMS_ORDER = ("valid_time", "time", "step", "isobaricInhPa", "number", "values")
 
 @attrs.define
 class CdsapiRequestClient:
-    client_kwargs: dict[str, Any] = {"quiet": True, "maximum_tries": 1}
+    client_kwargs: dict[str, Any] = {"maximum_tries": 1}
 
     def submit_and_wait_on_result(self, request: dict[str, Any]) -> Any:
         request = request.copy()
